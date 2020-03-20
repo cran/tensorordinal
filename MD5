@@ -1,0 +1,11 @@
+19d355143ab5a007db438a431e94077b *DESCRIPTION
+3bd5a16ff50e069891a86bee68e60727 *NAMESPACE
+cd403b4f3c559ae47af3fbc314f7131a *R/basicfunction.R
+d166391a9948fa41d95f286b9fd9dbc2 *R/mainfunctions.R
+5633a0a2d7eceebe59632389ac6a5b7c *README.md
+a0116c7e2f5281dd598fe9702e3d80c1 *man/bic.Rd
+b8b4ad2dbb03c0b93beef2dc06401d85 *man/estimation.Rd
+7f92b823b79eb0f2e466fab2897d1828 *man/fit_continuous.Rd
+5df6d8df0f7d147c6dc87845f60c2274 *man/fit_ordinal.Rd
+8c5d33dffdce1a58b70cd359df555a7b *man/likelihood.Rd
+4d410ea77b33222c3fbaeedbbde71659 *man/realization.Rd
