@@ -1,4 +1,22 @@
 epsilon=10^-4
+
+logistic = function(x){
+  return(1/(1+exp(-x)))
+}
+
+#' The probability matrix given latent parameters
+#'
+#' Compute the probability matrix given latent parameters from the cumulative model
+#' @usage theta_to_p(theta,omega)
+#' @param theta a continuous-valued tensor (latent parameters)
+#' @param omega the cut-off points
+#' @return a probability matrix in which the number of columns is possible outcomes and each row vector is corresponding probabilities at an entry of the tensor
+#' @examples
+#' indices <- c(10,20,30)
+#' arr <- array(runif(prod(indices),-2,2),dim = indices)
+#' b <- c(-1.5,0,1.5)
+#' probability <- theta_to_p(arr,b);probability
+#' @export
 theta_to_p=function(theta,omega){
   epsilon=10^-4
   k = length(omega)
@@ -9,10 +27,6 @@ theta_to_p=function(theta,omega){
   p =  cbind(p,rep(1,length(theta)))-cbind(rep(0,length(theta)),p)
   p[p<epsilon]=epsilon ## regularize
   return(p)
-}
-
-logistic = function(x){
-  return(1/(1+exp(-x)))
 }
 
 
